@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Stopwatch</h1>
+    <div class="time-display">
+      <span id="hours">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>.
+      <span id="milliseconds">00</span>
+    </div>
+
+    <div class="controls">
+      <button id="startPauseBtn"><i class="fas fa-play"></i> Start</button>
+      <button id="lapBtn" disabled><i class="fas fa-flag"></i> Lap</button>
+      <button id="resetBtn" disabled><i class="fas fa-undo"></i> Reset</button>
+      <button id="themeToggle"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <div id="lapList" class="lap-list">
+      <div class="empty-state">
+        <i class="fas fa-flag"></i>
+        <p>Your lap times will appear here</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

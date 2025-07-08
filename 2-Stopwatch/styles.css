@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background: #1a1a1a;
+  color: white;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.time-display {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#themeToggle {
+  font-size: 20px;
+}
+
+.lap-list {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.lap-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: #eee;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #aaa;
+}
